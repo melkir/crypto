@@ -11,14 +11,18 @@ npm install @melkir/crypto
 ## Usage
 
 ```js
+import { randomBytes } from "node:crypto";
 import { decrypt, encrypt } from "@melkir/crypto";
 
-const { ENCRYPTION_KEY } = process.env;
+// The key must contain exactly 32 characters.
+// The following instruction generates one randomly which you can then save in your environment variables.
+const key = randomBytes(16).toString("hex");
+
 const message = "Shh its a seekrit";
-const encrypted = encrypt(message, ENCRYPTION_KEY);
+const encrypted = encrypt(message, key);
 // You can now send your encrypted message to anyone without worrying about it being intercepted.
 // The person who receives your message will then be able to decipher the content in the following way.
-const decrypted = decrypt(encrypted, ENCRYPTION_KEY);
+const decrypted = decrypt(encrypted, key);
 ```
 
 ## Credits
