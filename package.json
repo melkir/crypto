@@ -2,7 +2,9 @@
   "name": "@melkir/crypto",
   "version": "1.0.0",
   "description": "A simple encrypt and decrypt module for node.js",
-  "main": "index.ts",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
