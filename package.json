@@ -43,7 +43,8 @@
     "clean": true
   },
   "scripts": {
-    "build": "tsup --format esm,cjs"
+    "build": "tsup --format esm,cjs",
+    "test": "bun wiptest"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
