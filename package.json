@@ -1,6 +1,6 @@
 {
   "name": "@melkir/crypto",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A simple encrypt and decrypt module for node.js",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
