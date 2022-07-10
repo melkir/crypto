@@ -1,5 +1,6 @@
 /// <reference types="bun-types" />
 import { describe, expect, test } from "bun:test";
+// @ts-ignore
 import { decrypt, encrypt } from "./index";
 
 describe("Crypto", () => {
