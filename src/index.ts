@@ -1,9 +1,11 @@
 import { randomBytes, createCipheriv, createDecipheriv } from "node:crypto";
 
-export function encrypt(text: string, key: string): string {
+export function encrypt(text: string | object, key: string): string {
   let iv = Buffer.from(randomBytes(16)).toString("hex").slice(0, 16);
   let cipher = createCipheriv("aes-256-cbc", Buffer.from(key), iv);
-  let encrypted = cipher.update(text);
+  let encrypted = cipher.update(
+    typeof text === "object" ? JSON.stringify(text) : text
+  );
 
   encrypted = Buffer.concat([encrypted, cipher.final()]);
   return iv + ":" + encrypted.toString("hex");

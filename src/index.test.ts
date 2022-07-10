@@ -10,4 +10,11 @@ describe("Crypto", () => {
     const decrypted = decrypt(encrypted, ENCRYPTION_KEY);
     expect(message).toBe(decrypted);
   });
+
+  test("encrypt/decrypt json payload", () => {
+    const payload = { firstname: "John", lastname: "Doe" };
+    const encrypted = encrypt(payload, ENCRYPTION_KEY);
+    const decrypted = decrypt(encrypted, ENCRYPTION_KEY);
+    expect(JSON.stringify(payload)).toBe(decrypted);
+  });
 });
