@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/melkir/crypto#readme",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=v18.12.1"
   },
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
     "prepublishOnly": "bun build"
   },
   "devDependencies": {
-    "@types/node": "^18.0.3",
+    "@types/node": "^18.11.9",
     "bun-types": "^0.2.2",
     "tsup": "^6.5.0",
     "typescript": "^4.9.3"
