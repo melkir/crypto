@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.16.16",
-    "bun-types": "^0.6.4",
+    "bun-types": "^0.6.5",
     "tsup": "^6.7.0",
     "typescript": "^4.9.5"
   },
