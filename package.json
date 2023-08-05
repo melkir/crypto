@@ -45,7 +45,7 @@
     "prepublishOnly": "bun build"
   },
   "devDependencies": {
-    "@types/node": "^18.17.2",
+    "@types/node": "^18.17.3",
     "bun-types": "^0.7.2",
     "tsup": "^6.7.0",
     "typescript": "^4.9.5"
