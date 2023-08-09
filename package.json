@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/melkir/crypto#readme",
   "engines": {
-    "node": ">=v18.17.0"
+    "node": ">=v18.17.1"
   },
   "repository": {
     "type": "git",
