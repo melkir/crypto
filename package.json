@@ -48,7 +48,7 @@
     "@types/node": "^18.18.10",
     "bun-types": "^0.8.1",
     "tsup": "^7.3.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   },
   "tsup": {
     "entry": [
