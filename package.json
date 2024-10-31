@@ -1,6 +1,6 @@
 {
   "name": "@melkir/crypto",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A simple encrypt and decrypt module for node.js",
   "main": "dist/index.cjs",
   "exports": {
@@ -41,8 +41,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "test": "bun wiptest",
-    "prepublishOnly": "bun build"
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
     "@types/node": "^22.8.6",
